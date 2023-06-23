@@ -11,7 +11,7 @@ class LoginActivity : AppCompatActivity() {
 
     lateinit var editTextLogin : EditText
     lateinit var editPassLogin: EditText
-    //lateinit var editConfLogin: EditText
+
     lateinit var btnLogin:Button
 
     lateinit var auth: FirebaseAuth
@@ -22,7 +22,7 @@ class LoginActivity : AppCompatActivity() {
 
         editTextLogin = findViewById(R.id.textEmailLogin)
         editPassLogin = findViewById(R.id.editTextPasswordLogin)
-        //editConfLogin = findViewById(R.id.editTextConfirmPasswordLogin)
+
         btnLogin = findViewById(R.id.buttonLogin)
 
         auth = FirebaseAuth.getInstance()
