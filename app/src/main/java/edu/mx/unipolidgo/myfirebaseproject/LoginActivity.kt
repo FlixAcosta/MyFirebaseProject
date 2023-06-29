@@ -1,5 +1,6 @@
 package edu.mx.unipolidgo.myfirebaseproject
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -40,6 +41,9 @@ class LoginActivity : AppCompatActivity() {
         auth.signInWithEmailAndPassword(email,pass).addOnCompleteListener(this){
             if(it.isSuccessful){
                 Toast.makeText(this,"Login exitoso",Toast.LENGTH_LONG).show()
+
+                val intent = Intent(this, DataActivity::class.java)
+                startActivity(intent)
 
             }
             else{
